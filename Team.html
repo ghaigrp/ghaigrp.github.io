@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Page 9</title>
+    <style>
+      .divider {
+        border-left: 1px solid #000000;
+        height: 100%;
+      }
+
+      .transparent-header .navbar {
+        background-color: transparent !important;
+      }
+
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+
+      .logo {
+        max-width: 150px;
+      }
+
+      .transparent-header .navbar {
+        background-color: transparent !important;
+      }
+
+      .navbar .navbar-nav .nav-link {
+        color: #000000;
+        font-size: x-large;
+      }
+
+      .navbar-nav {
+        margin: 0 auto;
+      }
+
+      .navbar-nav .nav-link {
+        margin: 10px;
+        font-family: "CustomFont", sans-serif;
+      }
+
+      @font-face {
+        font-family: "CustomFont";
+        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "HeroFont";
+        src: url("/Fonts/APOLLO.otf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "OssFont";
+        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "ClientFont";
+        src: url("./Fonts/NunitoSans-Bold.ttf");
+      }
+
+      @font-face {
+        font-family: "Client2Font";
+        src: url("./Fonts/NunitoSans-SemiBold.ttf");
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        background-color: #87b9d6;
+      }
+
+      .box3 {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        background-color: grey;
+        border-width: 5px;
+        border-color: #234769;
+        border-style: solid;
+      }
+
+      .box2 {
+        height: 250px;
+        width: 400px;
+        position: relative;
+        background-color: #234769;
+      }
+
+      .insdiv {
+        font-size: large;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        gap: 50px;
+        width: max-content;
+        grid-template-columns: 50% 45%;
+      }
+
+      .grid-container2 {
+        display: grid;
+        gap: 50px;
+        width: max-content;
+        grid-template-columns: 30% 10% 30% 10%;
+        width: 100%;
+      }
+
+      .box1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .box4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .center-div {
+        width: 900px;
+      }
+
+      .center-div2 {
+        margin-top: 200px;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <section class="logo-container">
+      <a class="navbar-brand" href="#">
+        <img
+          class="logo"
+          src="./GG Website copy 2_Folder/gopal_links/logo.png"
+          alt="Company Logo"
+        />
+      </a>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark transparent-header">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./OurServices_IH.html"> Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Products1.html"> Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Clients.html"> Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Facilities.html"> Our Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Downloads</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Us</a
+              >
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="./GroupOfCompanies.html">
+                  Group of Companies</a
+                >
+                <a class="dropdown-item" href="./Team.html"> Our Team</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i
+                  class="fas fa-search fa-lg text-primary font-weight-lighter"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Clients Section-->
+    <img
+      style="display: block; width: 100%; height: 570px; margin-bottom: 50px"
+      src="./GG Website copy 2_Folder/Links/Screenshot 2023-06-10 at 1.29.59 PM.png"
+    />
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      "
+    >
+      <h1 class="text-center" style="font-family: HeroFont">Our Team</h1>
+      <p
+        class="text-center"
+        style="margin-bottom: 50px; margin-top: 10px; width: 700px"
+      >
+        Since 1984, our family owned and operated hardware venture has been
+        helping people complete their projects with quality products and
+        exceptional service. started by Tarun Ghai and Jaideep Ghai s/o Onkar
+        Ghai.
+      </p>
+      <section class="container-fluid justify-content-center d-flex">
+        <div class="grid-container w-100">
+          <div class="box1">
+            <div class="box"></div>
+            <div class="box2">
+              <div style="margin-top: 20px; margin-left: 20px">
+                <h1
+                  style="
+                    font-family: HeroFont;
+                    color: white;
+                    font-size: x-large;
+                    margin-bottom: 0px;
+                  "
+                >
+                  Late Onkar Ghai
+                </h1>
+                <p style="color: #87b9d6; font-weight: bolder">Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box"></div>
+            <div class="box2">
+              <div style="margin-top: 20px; margin-left: 20px">
+                <h1
+                  style="
+                    font-family: HeroFont;
+                    color: white;
+                    font-size: x-large;
+                    margin-bottom: 0px;
+                  "
+                >
+                  Late Tarun Ghai
+                </h1>
+                <p style="color: #87b9d6; font-weight: bolder">
+                  Managing Director
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box"></div>
+            <div class="box2">
+              <div style="margin-top: 20px; margin-left: 20px">
+                <h1
+                  style="
+                    font-family: HeroFont;
+                    color: white;
+                    font-size: x-large;
+                    margin-bottom: 0px;
+                  "
+                >
+                  Jaideep Ghai
+                </h1>
+                <p style="color: #87b9d6; font-weight: bolder">
+                  Managing Director
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box"></div>
+            <div class="box2">
+              <div style="margin-top: 20px; margin-left: 20px">
+                <h1
+                  style="
+                    font-family: HeroFont;
+                    color: white;
+                    font-size: x-large;
+                    margin-bottom: 0px;
+                  "
+                >
+                  Harshit Ghai
+                </h1>
+                <p style="color: #87b9d6; font-weight: bolder">Director</p>
+              </div>
+              <div style="position: absolute; right: 10px; bottom: 10px">
+                <img
+                  src="/GG Website copy 2_Folder/Links/linkedin.svg"
+                  style="height: 30px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box"></div>
+            <div class="box2">
+              <div style="margin-top: 20px; margin-left: 20px">
+                <h1
+                  style="
+                    font-family: HeroFont;
+                    color: white;
+                    font-size: x-large;
+                    margin-bottom: 0px;
+                  "
+                >
+                  Sajal Ghai
+                </h1>
+                <p style="color: #87b9d6; font-weight: bolder">Director</p>
+              </div>
+              <div style="position: absolute; right: 10px; bottom: 10px">
+                <img
+                  src="/GG Website copy 2_Folder/Links/linkedin.svg"
+                  style="height: 30px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box"></div>
+            <div class="box2">
+              <div style="margin-top: 20px; margin-left: 20px">
+                <h1
+                  style="
+                    font-family: HeroFont;
+                    color: white;
+                    font-size: x-large;
+                    margin-bottom: 0px;
+                  "
+                >
+                  Ojus Ghai
+                </h1>
+                <p style="color: #87b9d6; font-weight: bolder">Director</p>
+              </div>
+              <div style="position: absolute; right: 10px; bottom: 10px">
+                <img
+                  src="/GG Website copy 2_Folder/Links/linkedin.svg"
+                  style="height: 30px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="center-div2 d-flex justify-content-center">
+        <div class="grid-container2">
+          <div class="box4">
+            <div class="box3"></div>
+            <div>
+              <h1
+                class="text-center"
+                style="
+                  font-size: x-large;
+                  margin-top: 20px;
+                  width: 200px;
+                  margin-bottom: 0px;
+                  font-family: HeroFont;
+                "
+              >
+                Ravinder Singh
+              </h1>
+              <p
+                style="color: #234769; font-weight: bolder; text-align: center"
+              >
+                Manager
+              </p>
+            </div>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Amerjit Singh
+            </h1>
+            <p style="color: #234769; text-align: center; width: 200px">
+              Engineering Department
+            </p>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Nikhil
+            </h1>
+            <p style="color: #234769; text-align: center">
+              Engineering Department
+            </p>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Kamal
+            </h1>
+            <p style="color: #234769; text-align: center; width: 200px">
+              Engineering Department
+            </p>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Shubham
+            </h1>
+            <p style="color: #234769; text-align: center">
+              Engineering Department
+            </p>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Harpreet Singh
+            </h1>
+            <p style="color: #234769; text-align: center; width: 200px">
+              Engineering Department
+            </p>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Jagtar Singh
+            </h1>
+            <p style="color: #234769; text-align: center; width: 200px">
+              Engineering Department
+            </p>
+          </div>
+          <div class="box4">
+            <div class="box3"></div>
+            <h1
+              class="text-center"
+              style="
+                font-size: x-large;
+                margin-top: 20px;
+                width: 200px;
+                margin-bottom: 0px;
+                font-family: HeroFont;
+              "
+            >
+              Rahul
+            </h1>
+            <p style="color: #234769; text-align: center; width: 200px">
+              Engineering Department
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Footer-->
+    <footer style="margin-top: 50px">
+      <div style="background-color: #133b54; width: 100%; display: block">
+        <div
+          style="
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+          "
+        >
+          <img
+            src="./GG Website copy 2_Folder/gopal_links/Screenshot 2023-06-09 at 11.07.25 PM.png"
+            style="height: 250px; width: 150px; margin-right: 20px"
+          />
+          <div
+            style="
+              border-left: 2px solid white;
+              opacity: 0.7;
+              height: 235px;
+              margin-top: 10px;
+              margin-right: 20px;
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: start;
+            "
+          >
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Head Office:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 350px;
+                  margin-bottom: 1px;
+                  font-family: OssFont;
+                "
+              >
+                D128, Phase 7, Industrial Area, Sector 73, Sahibzada Ajit Singh
+                Nagar, Punjab 160062
+              </p>
+            </div>
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Timings:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 250px;
+                  margin-bottom: 1px;
+                  font-family: OssFont;
+                "
+              >
+                Monday-Saturday: 9:00 pm to 6:00 pm Sunday: 9am to 2pm
+              </p>
+            </div>
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Call:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 150px;
+                  margin-bottom: 1px;
+                  font-family: OssFont;
+                "
+              >
+                0172-4085059 +91 9592622709
+              </p>
+            </div>
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Email:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 150px;
+                  font-family: OssFont;
+                "
+              >
+                Chdsalescorp@gmail.com
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./GG Website copy 2_Folder/Links/ggmap.png"
+              style="
+                height: 300px;
+                right: 50px;
+                position: absolute;
+                bottom: 20px;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
