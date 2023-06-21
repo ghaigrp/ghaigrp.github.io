@@ -1,314 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <title>Page 7</title>
-    <style>
-      .divider {
-        border-left: 1px solid #000000;
-        height: 100%;
-      }
 
-      .transparent-header .navbar {
-        background-color: transparent !important;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Page 4</title>
+  <style>
+    .divider {
+      border-left: 1px solid #000000;
+      height: 100%;
+    }
 
-      .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-      }
+    .transparent-header .navbar {
+      background-color: transparent !important;
+    }
 
-      .logo {
-        max-width: 150px;
-      }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+    }
 
-      .transparent-header .navbar {
-        background-color: transparent !important;
-      }
+    .logo {
+      max-width: 150px;
+    }
 
-      .navbar .navbar-nav .nav-link {
-        color: #000000;
-        font-size: x-large;
-      }
+    .transparent-header .navbar {
+      background-color: transparent !important;
+    }
 
-      .navbar-nav {
-        margin: 0 auto;
-      }
+    .navbar .navbar-nav .nav-link {
+      color: #000000;
+      font-size: x-large;
+    }
 
-      .navbar-nav .nav-link {
-        margin: 10px;
-        font-family: "CustomFont", sans-serif;
-      }
+    .navbar-nav {
+      margin: 0 auto;
+    }
 
-      @font-face {
-        font-family: "CustomFont";
-        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
-      }
+    .navbar-nav .nav-link {
+      margin: 10px;
+      font-family: 'CustomFont', sans-serif;
+    }
 
-      @font-face {
-        font-family: "HeroFont";
-        src: url("/Fonts/APOLLO.otf") format("truetype");
-      }
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('/Fonts/GlacialIndifference-Regular.otf') format('truetype');
+    }
 
-      @font-face {
-        font-family: "OssFont";
-        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
-      }
+    @font-face {
+      font-family: 'HeroFont';
+      src: url('/Fonts/APOLLO.otf') format('truetype');
+    }
 
-      @font-face {
-        font-family: "ClientFont";
-        src: url("./Fonts/NunitoSans-Bold.ttf");
-      }
+    @font-face {
+      font-family: 'OssFont';
+      src: url('/Fonts/NunitoSans-Light.ttf') format('truetype');
+    }
 
-      @font-face {
-        font-family: "Client2Font";
-        src: url("./Fonts/NunitoSans-SemiBold.ttf");
-      }
+    @font-face {
+      font-family: 'ClientFont';
+      src: url('./Fonts/NunitoSans-Bold.ttf');
+    }
 
-      .box {
-        height: 158px;
-        width: 158px;
-        position: relative;
-      }
+    @font-face {
+      font-family: 'Client2Font';
+      src: url('./Fonts/NunitoSans-SemiBold.ttf');
+    }
 
-      .insdiv {
-        font-size: large;
-        position: absolute;
-        bottom: 0;
-      }
+    .box {
+      height: 158px;
+      width: 158px;
+      position: relative;
 
-      .grid-container {
-        display: grid;
-        gap: 100px;
-        width: max-content;
-        grid-template-columns: 30% 25% 30%;
-      }
+    }
 
-      .box1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    .insdiv {
+      font-size: large;
+      position: absolute;
+      bottom: 0;
+    }
 
-      .center-div {
-        width: 900px;
-      }
+    .grid-container {
+      display: grid;
+      gap: 100px;
+      width: max-content;
+      grid-template-columns: 30% 25% 30%;
 
-      .ggoc-heading {
-        font-family: "HeroFont", sans-serif;
-      }
+    }
 
-      .ggoc-discription {
-        font-family: "CustomFont", sans-serif;
-        font-size: large;
-      }
+    .box1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .rectangle {
-        background-color: #1c6fa5;
-        border-radius: 10px;
-        margin: auto 10px;
-        display: inline-block;
-      }
+    .center-div {
+      width: 900px;
+    }
 
-      .rectangle p {
-        margin: 0px 20px;
-        color: white;
-        font-size: x-large;
-        font-family: "herofont", sans-serif;
-      }
+    .ggoc-heading {
+      font-family: 'HeroFont', sans-serif;
 
-      .discription-keyword {
-        color: #1c6fa5;
-        font-family: "HeroFont", sans-serif;
-        font-size: x-large;
-      }
+    }
 
-      .img {
-        -webkit-filter: brightness(100%);
-      }
+    .ggoc-discription {
+      font-family: 'CustomFont', sans-serif;
+      font-size: large;
+    }
 
-      .img:hover {
-        -webkit-filter: brightness(50%);
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
-      }
-    </style>
-  </head>
+    .rectangle {
+      background-color: #1c6fa5;
+      border-radius: 10px;
+      margin: auto 10px;
+      display: inline-block;
+    }
 
-  <body class="bg-light">
-    <section class="logo-container">
-      <a class="navbar-brand" href="./index.html#">
-        <img
-          class="logo"
-          src="./GG Website copy 2_Folder/gopal_links/logo.png"
-          alt="Company Logo"
-        />
-      </a>
-    </section>
+    .rectangle p {
+      margin: 0px 20px;
+      color: white;
+      font-size: x-large;
+      font-family: "herofont", sans-serif;
+    }
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark transparent-header">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./Services1.html"> Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Products1.html"> Our Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Clients.html"> Clients</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Facilities.html"> Our Facilities</a>
-            </li>
+    .discription-keyword {
+      color: #1c6fa5;
+      font-family: 'HeroFont', sans-serif;
+      font-size: x-large;
+    }
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="aboutDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                About Us</a
-              >
-              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-                <a class="dropdown-item" href="./GroupOfCompanies.html">
-                  Group of Companies</a
-                >
-                <a class="dropdown-item" href="./Team.html"> Our Team</a>
-              </div>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#"> Contact Us</a>
-            </li> -->
-            <li class="nav-item"></li>
-          </ul>
-        </div>
+    .img {
+      -webkit-filter: brightness(100%)
+    }
+
+    .img:hover {
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <section class="logo-container">
+    <a class="navbar-brand" href="./index.html#">
+      <img class="logo" src="./GG Website copy 2_Folder/gopal_links/logo.png" alt="Company Logo">
+    </a>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark transparent-header">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./Services1.html"> Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Products1.html"> Our Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Clients.html"> Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Facilities.html"> Our Facilities</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> About Us</a>
+            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="./GroupOfCompanies.html"> Group of Companies</a>
+              <a class="dropdown-item" href="./Team.html"> Our Team</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#"> Contact Us</a>
+          </li> -->
+          <li class="nav-item">
+
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!--Clients Section-->
-    <img
-      style="display: block; width: 100%; height: 570px; margin-bottom: 50px"
-      src="./GG Website copy 2_Folder/Links/Screenshot 2023-06-10 at 3.13.16 PM.png"
-    />
-    <div
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 100px;
-      "
-    >
-      <div style="margin-bottom: 20px">
-        <h1 class="text-center ggoc-heading">Our Services</h1>
-        <p class="ggoc-discription">
-          Here are our fields of expertise that we provide competent services
-          for:
-        </p>
-      </div>
-      <section class="center-div w-100">
-        <div class="row px-5">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="img">
-                  <a href="./Services1.html#service1" id="service1"
-                    ><img
-                      src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.13%20AM.png"
-                      alt="Service 1"
-                      class="img-fluid"
-                  /></a>
-                </div>
+  <!--Clients Section-->
+  <img style="display: block; width:100%; height: 570px; margin-bottom:50px"
+    src="./GG Website copy 2_Folder/Links/Screenshot 2023-06-10 at 3.13.16 PM.png">
+  <div
+    style="display: flex; flex-direction:column; justify-content:center;align-items:center; margin-top: 20px; margin-bottom: 100px;">
+    <div style="margin-bottom: 20px;">
+      <h1 class="text-center ggoc-heading">Our Services</h1>
+      <p class=" ggoc-discription">Here are our fields of expertise that we provide competent services for:</p>
+    </div>
+    <section class="center-div w-100">
+      <!-- <div class="row px-5">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3 ">
+              <div class="img">
+                <a href="./Services1.html#service1" id="service1"><img
+                    src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.13%20AM.png"
+                    alt="Service 1" class="img-fluid"></a>
               </div>
-              <div class="col-md-3">
-                <div class="img">
-                  <a href="./Services2.html#service2"
-                    ><img
-                      src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.29%20AM.png"
-                      alt="Service 2"
-                      class="img-fluid"
-                  /></a>
-                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img">
+                <a href="./Services2.html#service2"><img
+                    src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.29%20AM.png"
+                    alt="Service 2" class="img-fluid"></a>
               </div>
-              <div class="col-md-3">
-                <div class="img">
-                  <a href="./Services3.html#service3"
-                    ><img
-                      src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.41%20AM.png"
-                      alt="Service 3"
-                      class="img-fluid"
-                  /></a>
-                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img">
+                <a href="./Services3.html#service3"><img
+                    src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.41%20AM.png"
+                    alt="Service 3" class="img-fluid"></a>
               </div>
-              <div class="col-md-3">
-                <div class="img">
-                  <a href="./Services4.html#service4"
-                    ><img
-                      src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.53%20AM.png"
-                      alt="Service 4"
-                      class="img-fluid"
-                  /></a>
-                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img">
+                <a href="./Services4.html#service4"><img
+                    src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.53%20AM.png"
+                    alt="Service 4" class="img-fluid"></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div> -->
+      <div class="row px-5">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3 btn ">
+              <div class="img">
+                <img
+                  src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.13%20AM.png"
+                  alt="Service 1" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-3 btn">
+              <div class="img">
+                <img
+                  src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.29%20AM.png"
+                  alt="Service 2" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-3 btn">
+              <div class="img">
+                <img
+                  src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.41%20AM.png"
+                  alt="Service 3" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-3 btn">
+              <div class="img">
+                <img
+                  src="./GG%20Website%20copy%202_Folder/gopal_links/our_services/Screenshot%202023-06-10%20at%2012.26.53%20AM.png"
+                  alt="Service 4" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  </div>
 
-    <!-- discription section -->
+  <!-- discription section -->
 
-    <div
-      class="container d-flex align-items-center justify-content-center"
-      style="margin: 100px auto"
-    >
+  <div id="paragraphs">
+    <!-- discription section 4-->
+
+    <div class=" container d-flex align-items-center justify-content-center infopera d-none"
+      style="margin: 100px auto;">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-8 text-center">
-          <a id="service4"></a>
-          <p
-            class="ggoc-discription"
-            style="margin: 100px auto; text-align: justify"
-          >
-            <span class="discription-keyword">Real Estate: </span> We are
-            excited to bring our expertise to the world of property management,
-            investment, and development. Our team is committed to providing
-            top-quality service to our clients and ensuring that they have a
-            seamless experience in all their real estate dealings. We are
-            passionate about creating unique and valuable spaces that meet the
-            needs of our customers. Stay tuned for updates.
+          <p class="ggoc-discription" style="margin: 100px auto; text-align: justify; "><span
+              class="discription-keyword">Industrial Hardware: </span> Our products are designed to cater to all your
+            needs, from Grinding Wheels to cutting Discs, and from Abrasives to Masking tapes, Spray paints, PU Foam,
+            Silicon, Insulation Tapes, Sand Paper & Adhesives, we have it all. With a wide range of options available,
+            you
+            can choose the product that fits your requirements and achieve the desired results.</p>
+          <div class="rectangle">
+            <p>View our Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- discription section 5-->
+
+    <div class=" d-flex align-items-center justify-content-center d-none infopera" style="margin: 100px auto;">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="ggoc-discription" style="margin: 100px auto; text-align: justify; "><span
+              class="discription-keyword">Industrial Lubricants: </span> We specialize in providing a wide range of
+            lubricants to help keep your machines running smoothly. Lubricants, which include fluids, greases, and oils,
+            help to reduce the wear and tear of materials, as well as minimize binding and friction. Our team is proud
+            to
+            be one of the top distributors of automotive lubricant products such as engine oil, grease, gear and
+            transmission oil, and chain spray, from trusted brands like Veedol. In addition to our automotive line, we
+            also offer industrial lubricants including hydraulic oil, cutting oil, machinery oil, compressor oil,
+            general-purpose oil, gearbox oil, and transformer oil from Motorol. Trust us to provide the right lubricant
+            solutions to help your machinery and equipment function at their best.</p>
+          <div class="rectangle">
+            <p>View our Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- discription section 6-->
+
+    <div class=" d-flex align-items-center justify-content-center d-none infopera" style="margin: 100px auto;">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="ggoc-discription" style="margin: 100px auto; text-align: justify; "><span
+              class="discription-keyword">Medical Equipment: </span> Our company provides a comprehensive range of IC
+            (cardiology) equipment, which are essential for clinical diagnosis, treatment, and direct care of users. Our
+            products are designed to be calibrated, maintained, repaired, and decommissioned to ensure optimal
+            performance
+            and safety. We take pride in being a reliable supplier of high-quality medical equipment that meets the most
+            stringent standards. Our product portfolio includes PTCA Balloons (Semi-Compliant & Non - Compliant),
+            Coronary
+            Stents, Guiding Catheter, Guide Wires, Introducer Needle, Injections, Inflation Devices, Rotablator
+            Accessories and more. With our unwavering commitment to quality and customer satisfaction, we strive to
+            deliver the best in class IC equipment to healthcare professionals and institutions worldwide.
           </p>
           <div class="rectangle">
             <p>View our Products</p>
@@ -317,168 +347,107 @@
       </div>
     </div>
 
-    <!--Footer-->
-    <footer style="margin-top: 50px">
-      <div style="background-color: #133b54; width: 100%; display: block">
-        <div
-          style="
-            padding: 40px;
-            display: flex;
-            flex-direction: row;
-            position: relative;
-          "
-        >
-          <img
-            src="./GG Website copy 2_Folder/gopal_links/Screenshot 2023-06-09 at 11.07.25 PM.png"
-            style="height: 250px; width: 150px; margin-right: 20px"
-          />
-          <div
-            style="
-              border-left: 2px solid white;
-              opacity: 0.7;
-              height: 235px;
-              margin-top: 10px;
-              margin-right: 20px;
-            "
-          ></div>
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: start;
-              align-items: start;
-            "
-          >
-            <div>
-              <h1
-                style="
-                  color: white;
-                  font-size: smaller;
-                  margin-top: 10px;
-                  font-weight: bolder;
-                  margin-bottom: 0px;
-                  font-family: ClientFont;
-                "
-              >
-                Head Office:
-              </h1>
-              <p
-                style="
-                  color: white;
-                  font-size: smaller;
-                  width: 350px;
-                  margin-bottom: 1px;
-                  font-family: OssFont;
-                "
-              >
-                D128, Phase 7, Industrial Area, Sector 73, Sahibzada Ajit Singh
-                Nagar, Punjab 160062
-              </p>
-            </div>
-            <div>
-              <h1
-                style="
-                  color: white;
-                  font-size: smaller;
-                  margin-top: 10px;
-                  font-weight: bolder;
-                  margin-bottom: 0px;
-                  font-family: ClientFont;
-                "
-              >
-                Timings:
-              </h1>
-              <p
-                style="
-                  color: white;
-                  font-size: smaller;
-                  width: 250px;
-                  margin-bottom: 1px;
-                  font-family: OssFont;
-                "
-              >
-                Monday-Saturday: 9:00 pm to 6:00 pm Sunday: 9am to 2pm
-              </p>
-            </div>
-            <div>
-              <h1
-                style="
-                  color: white;
-                  font-size: smaller;
-                  margin-top: 10px;
-                  font-weight: bolder;
-                  margin-bottom: 0px;
-                  font-family: ClientFont;
-                "
-              >
-                Call:
-              </h1>
-              <p
-                style="
-                  color: white;
-                  font-size: smaller;
-                  width: 150px;
-                  margin-bottom: 1px;
-                  font-family: OssFont;
-                "
-              >
-                0172-4085059 +91 9592622709
-              </p>
-            </div>
-            <div>
-              <h1
-                style="
-                  color: white;
-                  font-size: smaller;
-                  margin-top: 10px;
-                  font-weight: bolder;
-                  margin-bottom: 0px;
-                  font-family: ClientFont;
-                "
-              >
-                Email:
-              </h1>
-              <p
-                style="
-                  color: white;
-                  font-size: smaller;
-                  width: 150px;
-                  font-family: OssFont;
-                "
-              >
-                Chdsalescorp@gmail.com
-              </p>
-            </div>
-          </div>
-          <div>
-            <a href="https://goo.gl/maps/sLFNUFALt4z3zobr6" target="_blank"
-              ><img
-                src="./GG Website copy 2_Folder/Links/ggmap.png"
-                style="
-                  height: 300px;
-                  right: 50px;
-                  position: absolute;
-                  bottom: 20px;
-                "
-            /></a>
+
+    <!-- discription section 7-->
+
+    <div class=" d-flex align-items-center justify-content-cente infopera" style="margin: 100px auto;">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="ggoc-discription" style="margin: 100px auto; text-align: justify; "><span
+              class="discription-keyword">Real Estate: </span> We are excited to bring our expertise to the world of
+            property management, investment, and development. Our team is committed to providing top-quality service to
+            our clients and ensuring that they have a seamless experience in all their real estate dealings. We are
+            passionate about creating unique and valuable spaces that meet the needs of our customers. Stay tuned for
+            updates.
+          </p>
+          <div class="rectangle">
+            <p>View our Products</p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  </body>
+  </div>
+
+
+
+  <!--Footer-->
+  <footer style="margin-top:50px">
+    <div style="background-color:#133B54; width:100%; display:block; ">
+      <div style="padding:40px; display:flex; flex-direction:row; position:relative">
+        <img src="./GG Website copy 2_Folder/gopal_links/Screenshot 2023-06-09 at 11.07.25 PM.png"
+          style="height: 250px; width:150px;margin-right:20px;">
+        <div style="border-left: 2px solid white;
+            opacity:0.7;
+            height: 235px; margin-top:10px; margin-right:20px"></div>
+        <div style="display: flex; flex-direction:column; justify-content:start; align-items:start;">
+          <div>
+            <h1
+              style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px; font-family:ClientFont;">
+              Head Office:</h1>
+            <p style="color:white; font-size:smaller; width: 350px; margin-bottom:1px;font-family:OssFont;">D128, Phase
+              7, Industrial Area, Sector 73, Sahibzada Ajit
+              Singh Nagar, Punjab 160062</p>
+          </div>
+          <div>
+            <h1
+              style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px;font-family:ClientFont;">
+              Timings:</h1>
+            <p style="color:white; font-size:smaller; width: 250px; margin-bottom:1px; font-family:OssFont;">
+              Monday-Saturday: 9:00 pm to 6:00 pm
+              Sunday: 9am to 2pm</p>
+          </div>
+          <div>
+            <h1
+              style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px;font-family:ClientFont;">
+              Call:</h1>
+            <p style="color:white; font-size:smaller; width: 150px; margin-bottom:1px;font-family:OssFont;">0172-4085059
+              +91 9592622709</p>
+          </div>
+          <div>
+            <h1
+              style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px; font-family:ClientFont;">
+              Email:</h1>
+            <p style="color:white; font-size:smaller; width: 150px;font-family:OssFont;">Chdsalescorp@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <a href="https://goo.gl/maps/sLFNUFALt4z3zobr6" target="_blank"><img
+              src="./GG Website copy 2_Folder/Links/ggmap.png"
+              style="height:300px; right:50px; position:absolute;bottom:20px"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.btn').click(function () {
+        var index = $(this).index();
+
+        // Hide all paragraphs
+        $('.infopera').addClass('d-none');
+
+        // Show the selected paragraph
+        $('.infopera').eq(index).removeClass('d-none');
+      });
+    });
+  </script>
+</body>
+
 </html>
