@@ -1,740 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Company Website</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.2/css/all.min.css">
-    <link rel="import" href="Navbar.html">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.2/css/all.min.css"
+    />
+    <link rel="import" href="Navbar.html" />
     <style>
-        .divider {
-            border-left: 1px solid #000000;
-            height: 100%;
-        }
+      .divider {
+        border-left: 1px solid #000000;
+        height: 100%;
+      }
 
-        .transparent-header .navbar {
-            background-color: transparent !important;
-        }
+      .transparent-header .navbar {
+        background-color: transparent !important;
+      }
 
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70vh;
-        }
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
 
-        .logo {
-            max-width: 150px;
-        }
+      .logo {
+        max-width: 150px;
+      }
 
-        .transparent-header .navbar {
-            background-color: transparent !important;
-        }
+      .transparent-header .navbar {
+        background-color: transparent !important;
+      }
 
-        .navbar .navbar-nav .nav-link {
-            color: #000000;
-            font-size: x-large;
-        }
+      .navbar .navbar-nav .nav-link {
+        color: #000000;
+        font-size: x-large;
+      }
 
-        .navbar-nav {
-            margin: 0 auto;
-        }
+      .navbar-nav {
+        margin: 0 auto;
+      }
 
-        .navbar-nav .nav-link {
-            margin: 10px;
-            font-family: 'CustomFont', sans-serif;
-        }
+      .navbar-nav .nav-link {
+        margin: 10px;
+        font-family: "CustomFont", sans-serif;
+      }
 
-        @font-face {
-            font-family: 'CustomFont';
-            src: url('/Fonts/GlacialIndifference-Regular.otf') format('truetype');
-        }
+      @font-face {
+        font-family: "CustomFont";
+        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
+      }
 
-        @font-face {
-            font-family: 'HeroFont';
-            src: url('/Fonts/APOLLO.otf') format('truetype');
-        }
+      @font-face {
+        font-family: "HeroFont";
+        src: url("/Fonts/APOLLO.otf") format("truetype");
+      }
 
-        @font-face {
-            font-family: 'OssFont';
-            src: url('/Fonts/NunitoSans-Light.ttf') format('truetype');
-        }
+      @font-face {
+        font-family: "OssFont";
+        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
+      }
 
-        @font-face {
-            font-family: 'ClientFont';
-            src: url('./Fonts/NunitoSans-Bold.ttf');
-        }
+      @font-face {
+        font-family: "ClientFont";
+        src: url("./Fonts/NunitoSans-Bold.ttf");
+      }
 
-        @font-face {
-            font-family: 'Client2Font';
-            src: url('./Fonts/NunitoSans-SemiBold.ttf');
-        }
+      @font-face {
+        font-family: "Client2Font";
+        src: url("./Fonts/NunitoSans-SemiBold.ttf");
+      }
 
-        .box {
-            height: 158px;
-            width: 158px;
-            position: relative;
+      .box {
+        height: 158px;
+        width: 158px;
+        position: relative;
+      }
 
-        }
+      .insdiv {
+        font-size: large;
+        position: absolute;
+        bottom: 0;
+      }
 
-        .insdiv {
-            font-size: large;
-            position: absolute;
-            bottom: 0;
-        }
+      .grid-container {
+        display: grid;
+        gap: 100px;
+        width: max-content;
+        grid-template-columns: 30% 25% 30%;
+      }
 
-        .grid-container {
-            display: grid;
-            gap: 100px;
-            width: max-content;
-            grid-template-columns: 30% 25% 30%;
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-        }
+      .center-div {
+        width: 900px;
+      }
 
-        .box1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+      .ggoc-heading {
+        font-family: "HeroFont", sans-serif;
+      }
 
-        .center-div {
-            width: 900px;
-        }
+      .ggoc-discription {
+        font-family: "CustomFont", sans-serif;
+        font-size: large;
+      }
 
-        .ggoc-heading {
-            font-family: 'HeroFont', sans-serif;
+      .rectangle {
+        background-color: #1c6fa5;
+        border-radius: 10px;
+        margin: auto 10px;
+        display: inline-block;
+      }
 
-        }
+      .rectangle p {
+        margin: 0px 20px;
+        color: white;
+        font-size: x-large;
+        font-family: "herofont", sans-serif;
+      }
 
-        .ggoc-discription {
-            font-family: 'CustomFont', sans-serif;
-            font-size: large;
-        }
+      .discription-keyword {
+        color: #1c6fa5;
+        font-family: "HeroFont", sans-serif;
+        font-size: x-large;
+      }
 
-        .rectangle {
-            background-color: #1c6fa5;
-            border-radius: 10px;
-            margin: auto 10px;
-            display: inline-block;
-        }
+      .img {
+        -webkit-filter: brightness(100%);
+      }
 
-        .rectangle p {
-            margin: 0px 20px;
-            color: white;
-            font-size: x-large;
-            font-family: "herofont", sans-serif;
-        }
-
-        .discription-keyword {
-            color: #1c6fa5;
-            font-family: 'HeroFont', sans-serif;
-            font-size: x-large;
-        }
-
-        .img {
-            -webkit-filter: brightness(100%)
-        }
-
-        .img:hover {
-            -webkit-filter: brightness(50%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
+      .img:hover {
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
     </style>
     <style>
-        .divider {
-            border-left: 3px solid #000000;
-            height: 100%;
-        }
+      .divider {
+        border-left: 3px solid #000000;
+        height: 100%;
+      }
 
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70vh;
-        }
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
 
-        .logo {
-            max-width: 150px;
-        }
+      .logo {
+        max-width: 150px;
+      }
 
-        .navbar .navbar-nav .nav-link {
-            color: #000000;
-            font-size: x-large;
-        }
+      .navbar .navbar-nav .nav-link {
+        color: #000000;
+        font-size: x-large;
+      }
 
-        .navbar-nav {
-            margin: 0 auto;
-        }
+      .navbar-nav {
+        margin: 0 auto;
+      }
 
-        .navbar-nav .nav-link {
-            margin: 10px;
-            font-family: 'CustomFont', sans-serif;
-        }
+      .navbar-nav .nav-link {
+        margin: 10px;
+        font-family: "CustomFont", sans-serif;
+      }
 
-        .navbar-dark .navbar-nav .nav-link:hover {
-            color: #000000;
-        }
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: #000000;
+      }
 
-        @font-face {
-            font-family: 'CustomFont';
-            src: url('/Fonts/GlacialIndifference-Regular.otf') format('truetype');
-        }
+      @font-face {
+        font-family: "CustomFont";
+        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
+      }
 
-        @font-face {
-            font-family: 'HeroFont';
-            src: url('/Fonts/APOLLO.otf') format('truetype');
-        }
+      @font-face {
+        font-family: "HeroFont";
+        src: url("/Fonts/APOLLO.otf") format("truetype");
+      }
 
-        @font-face {
-            font-family: 'OssFont';
-            src: url('/Fonts/NunitoSans-Light.ttf') format('truetype');
-        }
+      @font-face {
+        font-family: "OssFont";
+        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
+      }
 
-        .hero-section {
-            position: relative;
-            height: 100vh;
-        }
+      .hero-section {
+        position: relative;
+        height: 100vh;
+      }
 
-        .hero-image-container {
-            max-height: 550px;
-            /* Adjust the value as needed */
-            overflow: hidden;
-        }
+      .hero-image-container {
+        max-height: 550px;
+        /* Adjust the value as needed */
+        overflow: hidden;
+      }
 
-        .hero-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
+      .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
 
-        .hero-content {
-            font-family: 'HeroFont', sans-serif;
-            font-size: x-large;
-            line-height: 3vh;
-        }
+      .hero-content {
+        font-family: "HeroFont", sans-serif;
+        font-size: x-large;
+        line-height: 3vh;
+      }
 
-        .hero-content-midline {
-            font-size: large;
-        }
+      .hero-content-midline {
+        font-size: large;
+      }
 
-        .divider {
-            border-left: 1px solid #ccc;
-            height: 100%;
-        }
+      .divider {
+        border-left: 1px solid #ccc;
+        height: 100%;
+      }
 
-        .content-section {
-            margin-top: 50px;
-        }
+      .content-section {
+        margin-top: 50px;
+      }
 
-        .content-section h2 {
-            font-size: 24px;
-            font-weight: bold;
-        }
+      .content-section h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
 
-        .content-section p {
-            font-size: 16px;
-        }
+      .content-section p {
+        font-size: 16px;
+      }
 
-        .oss-heading {
-            font-family: 'HeroFont', sans-serif;
-        }
+      .oss-heading {
+        font-family: "HeroFont", sans-serif;
+      }
 
-        .oss-heading-kw {
-            color: #1c6fa5;
-        }
+      .oss-heading-kw {
+        color: #1c6fa5;
+      }
 
-        .oss-content-container {
-            padding: 0px 130px
-        }
+      .oss-content-container {
+        padding: 0px 130px;
+      }
 
-        .oss-content {
-            font-family: 'OssFont', sans-serif;
-        }
+      .oss-content {
+        font-family: "OssFont", sans-serif;
+      }
 
-        .woy-image {
-            position: relative;
-            padding: 100px;
-            overflow: hidden;
-        }
+      .woy-image {
+        position: relative;
+        padding: 100px;
+        overflow: hidden;
+      }
 
-        .woy-image img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+      .woy-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
 
-        .section-heading {
-            position: relative;
-            top: 0;
-            left: 0;
-            margin: 20px;
-            /* Adjust the margin value as needed */
-        }
+      .section-heading {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px;
+        /* Adjust the margin value as needed */
+      }
 
-        .section-heading-p {
-            font-family: 'HeroFont', sans-serif;
-            font-size: 40px;
-        }
+      .section-heading-p {
+        font-family: "HeroFont", sans-serif;
+        font-size: 40px;
+      }
 
-        .section-heading::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            /* Adjust the distance of the underline from the heading */
-            width: 80px;
-            /* Adjust the width of the underline */
-            height: 2px;
-            /* Adjust the thickness of the underline */
-            background-color: #000;
-            /* Adjust the color of the underline */
-        }
+      .section-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        /* Adjust the distance of the underline from the heading */
+        width: 80px;
+        /* Adjust the width of the underline */
+        height: 2px;
+        /* Adjust the thickness of the underline */
+        background-color: #000;
+        /* Adjust the color of the underline */
+      }
 
+      .woy-clips {
+        width: 100%;
+      }
 
-        .woy-clips {
-            width: 100%;
-        }
+      .outer-rectangle {
+        width: 400px;
+        height: 300px;
+        border: 2px solid black;
+        position: relative;
+        margin: 0 auto;
+      }
 
+      .inner-rectangle {
+        width: 40px;
+        height: 25px;
+        background-color: #ac7547;
+        margin: auto;
+      }
 
-        .outer-rectangle {
-            width: 400px;
-            height: 300px;
-            border: 2px solid black;
-            position: relative;
-            margin: 0 auto;
-        }
+      .clip-heading {
+        font-family: "HeroFont", sans-serif;
+        color: #1c6fa5;
+        font-size: 30px;
+      }
 
-        .inner-rectangle {
-            width: 40px;
-            height: 25px;
-            background-color: #ac7547;
-            margin: auto;
-        }
+      .clip-discription {
+        font-family: "OssFont", sans-serif;
+        font-size: large;
+      }
 
-        .clip-heading {
-            font-family: 'HeroFont', sans-serif;
-            color: #1c6fa5;
-            font-size: 30px
-        }
+      .clip {
+        line-height: 12px;
+        height: 80px;
+      }
 
-        .clip-discription {
-            font-family: 'OssFont', sans-serif;
-            font-size: large;
-        }
-
-        .clip {
-            line-height: 12px;
-            height: 80px;
-        }
-
-        /* CSS styling for the gray boxes */
-        /* .gray-box {
+      /* CSS styling for the gray boxes */
+      /* .gray-box {
       background-color: gray;
 
 
     } */
 
-        /* CSS styling for the content */
-        .content {
-            margin-left: 100px;
-            text-align: left;
-            margin-top: 100px;
+      /* CSS styling for the content */
+      .content {
+        margin-left: 100px;
+        text-align: left;
+        margin-top: 100px;
+      }
 
-        }
+      /* CSS styling for the container */
+      .polygon {
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        background-color: #133b54;
+      }
 
+      .polygon-images-container {
+        display: flex;
+        background-color: #ac7547;
+      }
 
-        /* CSS styling for the container */
-        .polygon {
-            display: flex;
-            align-items: center;
-            margin-top: 70px;
-            background-color: #133B54;
-        }
+      .polygon-images {
+        display: flex;
+        justify-content: space-between;
+      }
 
-        .polygon-images-container {
-            display: flex;
-            background-color: #ac7547;
-        }
+      .carousel-item {
+        background-color: lightgray;
+        width: auto;
+        height: 100px;
+      }
 
-        .polygon-images {
-            display: flex;
-            justify-content: space-between;
-        }
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+      }
 
-        .carousel-item {
-            background-color: lightgray;
-            width: auto;
-            height: 100px;
+      .clients {
+        margin-bottom: 100px;
+      }
 
+      .first_signup {
+        font-family: "HeroFont", sans-serif;
+        margin-left: 50px;
+        margin-top: 100px;
+      }
 
-        }
+      .rectangle {
+        background-color: #1c6fa5;
+        border-radius: 20px;
+        margin: auto 10px;
+      }
 
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
+      .rectangle p {
+        margin: 0px 20px;
+        color: white;
+        font-size: x-large;
+        font-family: "herofont", sans-serif;
+      }
 
+      .carousel-item {
+        text-align: center;
+      }
 
-        .clients {
-            margin-bottom: 100px;
-        }
+      .carousel-inner {
+        width: 100%;
+        max-height: 100vh;
+        background-color: #e2e2e2;
+      }
 
-        .first_signup {
-            font-family: 'HeroFont', sans-serif;
-            margin-left: 50px;
-            margin-top: 100px;
+      .carousel img {
+        object-fit: cover;
+        background-color: #e2e2e2;
+        max-height: 100%;
+        max-width: 100%;
+      }
 
-        }
+      .osheading {
+        font-family: "HeroFont", sans-serif;
+      }
 
+      .lsot {
+        padding: 100px 50px;
+        /* background-color: aquamarine; */
+      }
 
-        .rectangle {
-            background-color: #1c6fa5;
-            border-radius: 20px;
-            margin: auto 10px;
-        }
+      .carousel_ext {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
 
-        .rectangle p {
-            margin: 0px 20px;
-            color: white;
-            font-size: x-large;
-            font-family: "herofont", sans-serif;
-        }
+      .carousel_ext-inner {
+        display: flex;
+        transition: transform 0.3s ease;
+      }
 
-        .carousel-item {
-            text-align: center;
-        }
+      .carousel_ext-item {
+        flex: 0 0 calc(100% / 5);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
 
-        .carousel-inner {
-            width: 100%;
-            max-height: 100vh;
-            background-color: #E2E2E2;
-        }
+      .carousel_ext-controls {
+        position: relative;
+        margin-top: 10px;
+      }
 
-        .carousel img {
-            object-fit: cover;
-            background-color: #E2E2E2;
-            max-height: 100%;
-            max-width: 100%;
-        }
+      .carousel_ext-controls button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        color: #000;
+        font-size: 20px;
+        cursor: pointer;
+      }
 
-        .osheading {
-            font-family: 'HeroFont', sans-serif;
-        }
+      .prev-button {
+        left: 0;
+      }
 
-        .lsot {
-            padding: 100px 50px;
-            /* background-color: aquamarine; */
-        }
-
-        .carousel_ext {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .carousel_ext-inner {
-            display: flex;
-            transition: transform 0.3s ease;
-        }
-
-        .carousel_ext-item {
-            flex: 0 0 calc(100% / 5);
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-
-        .carousel_ext-controls {
-            position: relative;
-            margin-top: 10px;
-        }
-
-        .carousel_ext-controls button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: transparent;
-            border: none;
-            color: #000;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .prev-button {
-            left: 0;
-        }
-
-        .next-button {
-            right: 0;
-        }
+      .next-button {
+        right: 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <section class="logo-container">
-        <a class="navbar-brand" href="./index.html#">
-            <img class="logo" src="./GG Website copy 2_Folder/gopal_links/logo.png" alt="Company Logo">
-        </a>
+      <a class="navbar-brand" href="./index.html#">
+        <img
+          class="logo"
+          src="./GG Website copy 2_Folder/gopal_links/logo.png"
+          alt="Company Logo"
+        />
+      </a>
     </section>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark transparent-header">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Services1.html"> Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Products1.html"> Our Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Clients.html"> Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Facilities.html"> Our Facilities</a>
-                    </li>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./Services1.html"> Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Products1.html"> Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Clients.html"> Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Facilities.html"> Our Facilities</a>
+            </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Us</a>
-                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <a class="dropdown-item" href="./GroupOfCompanies.html"> Group of Companies</a>
-                            <a class="dropdown-item" href="./Team.html"> Our Team</a>
-                        </div>
-                    </li>
-                    <!-- <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Us</a
+              >
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="./GroupOfCompanies.html">
+                  Group of Companies</a
+                >
+                <a class="dropdown-item" href="./Team.html"> Our Team</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="#"> Contact Us</a>
           </li> -->
-                    <li class="nav-item">
-
-                    </li>
-                </ul>
-            </div>
+            <li class="nav-item"></li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="">
-        <div class="hero-content position-absolute text-white mt-5 ml-5">
-            <p class="mb-1">Leading Wholesale & Retail Dealers of</p>
-            <p class="mb-1 hero-content-midline">Hardware, Power Tools & Medical Equipments in the region of</p>
-            <p class="mb-0">Chandigarh, Himachal Pradesh, Haryana & Punjab</p>
-        </div>
-        <div class="hero-image-container">
-            <img src="./GG Website copy 2_Folder/gopal_links/My project-1.png" alt="Hero Image" class="hero-image"
-                width="100%">
-        </div>
+      <div class="hero-content position-absolute text-white mt-5 ml-5">
+        <p class="mb-1">Leading Wholesale & Retail Dealers of</p>
+        <p class="mb-1 hero-content-midline">
+          Hardware, Power Tools & Medical Equipments in the region of
+        </p>
+        <p class="mb-0">Chandigarh, Himachal Pradesh, Haryana & Punjab</p>
+      </div>
+      <div class="hero-image-container">
+        <img
+          src="./GG Website copy 2_Folder/gopal_links/My project-1.png"
+          alt="Hero Image"
+          class="hero-image"
+          width="100%"
+        />
+      </div>
     </section>
 
     <!-- We Offer You -->
-    <div style="display: flex; flex-direction:column; justify-content:center;align-items:center;margin: 50px 0px;">
-        <h1 class="text-center" style="font-family: HeroFont;">Gallery</h1>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+      "
+    >
+      <h1 class="text-center" style="font-family: HeroFont">Gallery</h1>
     </div>
     <section class="woy-section py-xl-5 px-lg-5">
-        <!-- Gallery -->
-        <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+      <!-- Gallery -->
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
 
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-            </div>
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Wintry Mountain Landscape"
+          />
         </div>
-        <!-- Gallery -->
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Mountains in the Clouds"
+          />
+
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Waves at Sea"
+          />
+
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Yosemite National Park"
+          />
+        </div>
+      </div>
+      <!-- Gallery -->
     </section>
 
     <!-- Footer -->
-    <footer style="margin-top:50px">
-        <div style="background-color:#133B54; width:100%; display:block; ">
-            <div style="padding:40px; display:flex; flex-direction:row; position:relative">
-                <img src="./GG Website copy 2_Folder/gopal_links/Screenshot 2023-06-09 at 11.07.25 PM.png"
-                    style="height: 250px; width:150px;margin-right:20px;">
-                <div style="border-left: 2px solid white;
-            opacity:0.7;
-            height: 235px; margin-top:10px; margin-right:20px"></div>
-                <div style="display: flex; flex-direction:column; justify-content:start; align-items:start;">
-                    <div>
-                        <h1
-                            style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px; font-family:ClientFont;">
-                            Head Office:</h1>
-                        <p style="color:white; font-size:smaller; width: 350px; margin-bottom:1px;font-family:OssFont;">
-                            D128, Phase
-                            7, Industrial Area, Sector 73, Sahibzada Ajit
-                            Singh Nagar, Punjab 160055</p>
-                    </div>
-                    <div>
-                        <h1
-                            style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px;font-family:ClientFont;">
-                            Timings:</h1>
-                        <p
-                            style="color:white; font-size:smaller; width: 250px; margin-bottom:1px; font-family:OssFont;">
-                            Monday-Saturday: 9:00 pm to 6:00 pm
-                            Sunday: 9am to 2pm</p>
-                    </div>
-                    <div>
-                        <h1
-                            style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px;font-family:ClientFont;">
-                            Call:</h1>
-                        <p style="
+    <footer style="margin-top: 50px">
+      <div style="background-color: #133b54; width: 100%; display: block">
+        <div
+          style="
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+          "
+        >
+          <img
+            src="./GG Website copy 2_Folder/gopal_links/Screenshot 2023-06-09 at 11.07.25 PM.png"
+            style="height: 250px; width: 150px; margin-right: 20px"
+          />
+          <div
+            style="
+              border-left: 2px solid white;
+              opacity: 0.7;
+              height: 235px;
+              margin-top: 10px;
+              margin-right: 20px;
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: start;
+            "
+          >
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Head Office:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 350px;
+                  margin-bottom: 1px;
+                  font-family: OssFont;
+                "
+              >
+                D128, Phase 7, Industrial Area, Sector 73, Sahibzada Ajit Singh
+                Nagar, Punjab 160055
+              </p>
+            </div>
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Timings:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 250px;
+                  margin-bottom: 1px;
+                  font-family: OssFont;
+                "
+              >
+                Monday-Saturday: 9:00 pm to 6:00 pm
+              </p>
+            </div>
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Call:
+              </h1>
+              <p
+                style="
                   color: white;
                   font-size: smaller;
                   width: 110px;
                   margin-bottom: 1px;
                   font-family: OssFont;
-                ">
-                            0172-4085059 +91 8427202709
-                        </p>
-                    </div>
-                    <div>
-                        <h1
-                            style="color:white; font-size:smaller; margin-top :10px; font-weight:bolder; margin-bottom:0px; font-family:ClientFont;">
-                            Email:</h1>
-                        <p style="color:white; font-size:smaller; width: 150px;font-family:OssFont;">
-                            sales@ghai-group.com</p>
-                    </div>
-                </div>
-                <div>
-                    <a href="https://maps.app.goo.gl/VAK1ehYzwQUhBpiz8?g_st=iw" target="_blank"><img
-                            src="./GG Website copy 2_Folder/Links/ggmap.png"
-                            style="height:300px; right:50px; position:absolute;bottom:20px"></a>
-                </div>
+                "
+              >
+                0172-4085059 +91 8427202709
+              </p>
             </div>
+            <div>
+              <h1
+                style="
+                  color: white;
+                  font-size: smaller;
+                  margin-top: 10px;
+                  font-weight: bolder;
+                  margin-bottom: 0px;
+                  font-family: ClientFont;
+                "
+              >
+                Email:
+              </h1>
+              <p
+                style="
+                  color: white;
+                  font-size: smaller;
+                  width: 150px;
+                  font-family: OssFont;
+                "
+              >
+                sales@ghai-group.com
+              </p>
+            </div>
+          </div>
+          <div>
+            <a
+              href="https://maps.app.goo.gl/VAK1ehYzwQUhBpiz8?g_st=iw"
+              target="_blank"
+              ><img
+                src="./GG Website copy 2_Folder/Links/ggmap.png"
+                style="
+                  height: 300px;
+                  right: 50px;
+                  position: absolute;
+                  bottom: 20px;
+                "
+            /></a>
+          </div>
         </div>
+      </div>
     </footer>
 
-
     <!-- JavaScript and Bootstrap dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script>
-        // JavaScript for the carousel_ext
-        document.addEventListener("DOMContentLoaded", function () {
-            var carousel_extInner = document.querySelector(".carousel_ext-inner");
-            var carousel_extItems = Array.from(
-                document.querySelectorAll(".carousel_ext-item")
-            );
-            var carousel_ext = document.querySelector(".carousel_ext");
-            var prevButton = document.querySelector(".prev-button");
-            var nextButton = document.querySelector(".next-button");
+      // JavaScript for the carousel_ext
+      document.addEventListener("DOMContentLoaded", function () {
+        var carousel_extInner = document.querySelector(".carousel_ext-inner");
+        var carousel_extItems = Array.from(
+          document.querySelectorAll(".carousel_ext-item")
+        );
+        var carousel_ext = document.querySelector(".carousel_ext");
+        var prevButton = document.querySelector(".prev-button");
+        var nextButton = document.querySelector(".next-button");
 
-            var currentIndex = 0;
-            var itemWidth = carousel_extItems[0].offsetWidth;
-            var visibleItems = 0;
-            var totalItems = carousel_extItems.length;
-            var slideDistance = itemWidth * visibleItems;
-            var autoplayInterval = 5000; // Autoplay interval in milliseconds
+        var currentIndex = 0;
+        var itemWidth = carousel_extItems[0].offsetWidth;
+        var visibleItems = 0;
+        var totalItems = carousel_extItems.length;
+        var slideDistance = itemWidth * visibleItems;
+        var autoplayInterval = 5000; // Autoplay interval in milliseconds
 
-            // Set initial position of carousel_ext
-            carousel_extInner.style.transform = "translateX(0)";
+        // Set initial position of carousel_ext
+        carousel_extInner.style.transform = "translateX(0)";
 
-            // Handle click on previous button
-            prevButton.addEventListener("click", function () {
-                currentIndex =
-                    (currentIndex - visibleItems + totalItems) % totalItems;
-                carousel_extInner.style.transform =
-                    "translateX(-" + currentIndex * itemWidth + "px)";
-                resetAutoplay();
-            });
+        // Handle click on previous button
+        prevButton.addEventListener("click", function () {
+          currentIndex =
+            (currentIndex - visibleItems + totalItems) % totalItems;
+          carousel_extInner.style.transform =
+            "translateX(-" + currentIndex * itemWidth + "px)";
+          resetAutoplay();
+        });
 
-            // Handle click on next button
-            nextButton.addEventListener("click", function () {
-                currentIndex = (currentIndex + visibleItems) % totalItems;
-                carousel_extInner.style.transform =
-                    "translateX(-" + currentIndex * itemWidth + "px)";
-                resetAutoplay();
-            });
+        // Handle click on next button
+        nextButton.addEventListener("click", function () {
+          currentIndex = (currentIndex + visibleItems) % totalItems;
+          carousel_extInner.style.transform =
+            "translateX(-" + currentIndex * itemWidth + "px)";
+          resetAutoplay();
+        });
 
-            // Handle swipe gestures
-            var touchStartX = 0;
-            var touchEndX = 0;
+        // Handle swipe gestures
+        var touchStartX = 0;
+        var touchEndX = 0;
 
-            carousel_ext.addEventListener("touchstart", function (event) {
-                touchStartX = event.touches[0].clientX;
-                resetAutoplay();
-            });
+        carousel_ext.addEventListener("touchstart", function (event) {
+          touchStartX = event.touches[0].clientX;
+          resetAutoplay();
+        });
 
-            carousel_ext.addEventListener("touchend", function (event) {
-                touchEndX = event.changedTouches[0].clientX;
-                handleSwipe();
-                resetAutoplay();
-            });
+        carousel_ext.addEventListener("touchend", function (event) {
+          touchEndX = event.changedTouches[0].clientX;
+          handleSwipe();
+          resetAutoplay();
+        });
 
-            function handleSwipe() {
-                var swipeDistance = touchEndX - touchStartX;
+        function handleSwipe() {
+          var swipeDistance = touchEndX - touchStartX;
 
-                if (swipeDistance > 0) {
-                    currentIndex =
-                        (currentIndex - visibleItems + totalItems) % totalItems;
-                } else if (swipeDistance < 0) {
-                    currentIndex = (currentIndex + visibleItems) % totalItems;
-                }
+          if (swipeDistance > 0) {
+            currentIndex =
+              (currentIndex - visibleItems + totalItems) % totalItems;
+          } else if (swipeDistance < 0) {
+            currentIndex = (currentIndex + visibleItems) % totalItems;
+          }
 
-                carousel_extInner.style.transform =
-                    "translateX(-" + currentIndex * itemWidth + "px)";
-            }
+          carousel_extInner.style.transform =
+            "translateX(-" + currentIndex * itemWidth + "px)";
+        }
 
-            // Autoplay functionality
-            var autoplayTimer;
+        // Autoplay functionality
+        var autoplayTimer;
 
-            function startAutoplay() {
-                autoplayTimer = setInterval(function () {
-                    currentIndex = (currentIndex + visibleItems) % totalItems;
-                    carousel_extInner.style.transform =
-                        "translateX(-" + currentIndex * itemWidth + "px)";
-                }, autoplayInterval);
-            }
+        function startAutoplay() {
+          autoplayTimer = setInterval(function () {
+            currentIndex = (currentIndex + visibleItems) % totalItems;
+            carousel_extInner.style.transform =
+              "translateX(-" + currentIndex * itemWidth + "px)";
+          }, autoplayInterval);
+        }
 
-            function stopAutoplay() {
-                clearInterval(autoplayTimer);
-            }
+        function stopAutoplay() {
+          clearInterval(autoplayTimer);
+        }
 
-            function resetAutoplay() {
-                stopAutoplay();
-                startAutoplay();
-            }
+        function resetAutoplay() {
+          stopAutoplay();
+          startAutoplay();
+        }
 
-            // Start autoplay
-            startAutoplay();
-        }); 
+        // Start autoplay
+        startAutoplay();
+      });
     </script>
-</body>
-
+  </body>
 </html>
