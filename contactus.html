@@ -725,6 +725,65 @@
         </div>
         
       </div>
+      <style>
+        /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+      </style>
+      <div style="margin-top: 50px;">
+        <h1 style="font-family: HeroFont">Send us your query</h1>
+        <div class="container">
+            <form method="post" name="contactform" action="">
+          
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name.." required>
+          
+              <label for="lname">Mobile number</label>
+              <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
+              <label for="lname">Email</label>
+              <input type="text" id="email" name="email" placeholder="Email" required>
+          
+              
+          
+              <label for="subject">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+          
+              <input type="submit" value="Submit" style="background-color: #133B54;">
+          
+            </form>
+          </div>
+      </div>
+
       <section class="lsot">
         <div class="d-flex justify-content-between">
           <div class="p-4">
@@ -933,5 +992,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBo7UKNB7UW79WtHZTYoTGCaX6fyMmruisf2dsYmRS89D-j821Xj1VW83HS3ed8T3g/exec'
+        const form = document.forms['contactform']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   </body>
 </html>
