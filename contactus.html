@@ -660,7 +660,9 @@
             <li class="nav-item">
               <a class="nav-link" href="./Facilities.html"> Our Facilities</a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link" href="./contactus.html"> Contact Us</a>
+              </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -681,9 +683,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="./contactus.html"> Contact Us</a>
-            </li>
+            
             <li class="nav-item"></li>
           </ul>
         </div>
@@ -777,7 +777,10 @@ input[type=submit]:hover {
           
               <label for="subject">Message</label>
               <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+          <input type="date" id="date" name="date" hidden>
+              
           
+
               <input type="submit" value="Submit" style="background-color: #133B54;">
           
             </form>
@@ -790,10 +793,10 @@ input[type=submit]:hover {
             
               
               <div class=" d-flex py-5">
-                <a href="tel:+918427202709" target="_blank"><div class="rectangle">
+                <a href="tel:+918427202709" target="_blank"><div class="rectangle" style="padding: 10px;">
                   <p>Call Us Now</p>
                 </div></a>
-                <a href="https://maps.app.goo.gl/VAK1ehYzwQUhBpiz8?g_st=iw" target="_blank"> <div class="rectangle">
+                <a href="https://maps.app.goo.gl/VAK1ehYzwQUhBpiz8?g_st=iw" target="_blank"> <div class="rectangle" style="padding: 10px;">
                   <p>Visit our Head Office</p>
                 </div> </a>
     
@@ -1004,5 +1007,9 @@ input[type=submit]:hover {
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>
+        const d = new Date();
+        document.getElementById("date").valueAsDate = d;
+        </script>
   </body>
 </html>
