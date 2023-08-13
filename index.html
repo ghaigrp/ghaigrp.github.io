@@ -529,11 +529,12 @@
       var logo = document.getElementById("logo");
 
       function hideLogo() {
-        logo.classList.add("hidden");
-        // logo.style.opacity = 0;
+        logo.style.opacity = 0;
       }
 
-      window.addEventListener("scroll", hideLogo);
+      window.addEventListener("scroll", hideLogo, setTimeout(() => {
+        logo.classList.add("hidden");
+      }, 1000));
     });
   </script>
 
