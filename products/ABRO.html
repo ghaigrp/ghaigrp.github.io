@@ -56,17 +56,17 @@
 
       @font-face {
         font-family: "CustomFont";
-        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
+        src: url("../Fonts/GlacialIndifference-Regular.otf") format("truetype");
       }
 
       @font-face {
         font-family: "HeroFont";
-        src: url("/Fonts/APOLLO.otf") format("truetype");
+        src: url("../Fonts/APOLLO.otf") format("truetype");
       }
 
       @font-face {
         font-family: "OssFont";
-        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
+        src: url("../Fonts/NunitoSans-Light.ttf") format("truetype");
       }
 
       @font-face {
@@ -117,7 +117,9 @@
         font-family: "CustomFont", sans-serif;
         font-size: large;
       }
-
+body{
+  font-family: "OssFont", sans-serif;
+}
       .rectangle {
         background-color: #1c6fa5;
         border-radius: 10px;
@@ -181,7 +183,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../Products1.html"> Our Products</a>
+              <a class="nav-link" href="../Products1.html"> <strong>Our Products</strong></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../Clients.html"> Clients</a>
@@ -219,10 +221,7 @@
     </nav>
 
     <!--Clients Section-->
-    <img
-      style="display: block; width: 100%; height: 570px; margin-bottom: 50px"
-      src="../GG Website copy 2_Folder/Links/Screenshot 2023-06-10 at 3.13.16 PM.png"
-    />
+    
     <div
       style="
         display: flex;
@@ -233,38 +232,84 @@
         margin-bottom: 100px;
       "
     >
-      <div style="margin-bottom: 20px">
-        <h1 class="text-center ggoc-heading">
-          <a href="../Products1.html"><span>Our Products</span></a> / Industrial
+    <style>
+      .container{
+      padding-left: calc(var(--bs-gutter-x) * 5.5);
+      padding-right: calc(var(--bs-gutter-x) * 5.5);
+    }
+      .p{
+        font-family: "OssFont", sans-serif;
+      }
+      .section{
+        text-align: center;
+      }
+      .section img{
+        width: 20%;
+  margin: 100px;
+      }
+      .sub-heading{
+        font-size: 20px;
+        color: #2b83b1;
+        margin-bottom: 50px;
+        
+      }
+      .line{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid #1a3b55;
+      }
+      .heading{
+        padding: 100px;
+    background-color: #1a3b55;
+    color: white;
+    font-size: 25px !important;
+      }
+      .heading a{
+        color: white;
+      }
+    </style>
+      <div class="container-fluid" style="margin-bottom: 20px">
+        <h1 class="text-center ggoc-heading heading">
+          <a href="../Products1.html">Our Products</a> / Industrial
           Hardware / ABRO
-        </h1>
       </div>
+  
       <div class="section">
-        <img src="../logos/ABRO.png" alt="" />
+        <img src="../logos/ABRO.png" alt=""/>
       </div>
       <section class="center-div w-100">
         <div class="container">
-          <p style="font-size: x-large">
-            Ghai Group is the Authorized dealer for ABRO Products in the Mohali,
-            Chandigarh, Haryana, and Himachal Pradesh regions. Aipl Abro is a
-            channel partner of ABRO Industries inc, USA in India. We are proud
-            to be associated with ABRO for more than 20 years and our
-            association is growing longer.
+          <p style="">
+            <b>Ghai Group</b> has been the authorized dealer for ABRO Products since 2016, serving the regions of Punjab, Chandigarh, Haryana, and Himachal Pradesh. Aipl ABRO is a channel partner of ABRO Industries Inc, USA, in India. ABRO has garnered worldwide recognition and distinction owing to the exceptional quality and competitiveness of its offerings. It has become synonymous with Automotive Paint masking tapes in India, enjoying substantial popularity within the auto care sector. The brand's prominence and reputation are firmly established, underscoring its excellence and global recognition.
           </p>
-          <p style="font-size: x-large">
-            For nearly 75 years ABRO's name has been synonymous with quality in
-            the industrial, automotive, and consumer marketplace. With
-            distribution in over 175 countries, ABRO has attained worldwide
-            recognition and prominence for the excellence and competitiveness of
-            its products. ABRO is already a synonym for Automotive Paint masking
-            tapes in India and the brand is very much popular in the auto care
-            industry.
+          <hr class="line">
+          <p style="">
+            <span class="sub-heading ggoc-heading">Product Range: </span> <br>
+            <br>1) Masking Tape
+<br>2) Sealants
+<br>3) Telescopic Drawer Channels
+<br>4) Bopp Packing Tapes
+<br>5) PVC Insulation Tapes
+<br>6) PTFE Thread Sealing Tape
+<br>7) Diesel Fuel Treatment
+<br>8) Fibre Disc
+<br>9) Flap Disc
+<br>10) Hook & Loop Disc
+<br>11) Gold Cut Off Wheel
+<br>12) Grinding Wheel
+<br>13) Wood & Marble Cutting Disc
+<br>14) Abrasive Cloth Roll
+<br>15) Sand Paper
+<br>16) Aloxide Resin Belts
+<br>17) Spray Paints
+
           </p>
+          
           
         </div>
       </section>
       <section class="center-div w-100" style="margin-top: 100px">
-        <div class="container">
+        <!-- <div class="container">
         <h1 class="ggoc-heading" style="text-align: justify; font-size: xx-large;">
           Product Range
         </h1>
@@ -325,7 +370,7 @@
               
             </ul>
           </p>
-        </div>
+        </div> -->
       </section>
     </div>
 

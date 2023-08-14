@@ -12,7 +12,7 @@
     />
     <title>Our Products - Ghai group</title>
     <style>
-      a{
+      a {
         color: #000000;
         text-decoration: none;
       }
@@ -56,17 +56,17 @@
 
       @font-face {
         font-family: "CustomFont";
-        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
+        src: url("../Fonts/GlacialIndifference-Regular.otf") format("truetype");
       }
 
       @font-face {
         font-family: "HeroFont";
-        src: url("/Fonts/APOLLO.otf") format("truetype");
+        src: url("../Fonts/APOLLO.otf") format("truetype");
       }
 
       @font-face {
         font-family: "OssFont";
-        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
+        src: url("../Fonts/NunitoSans-Light.ttf") format("truetype");
       }
 
       @font-face {
@@ -117,7 +117,9 @@
         font-family: "CustomFont", sans-serif;
         font-size: large;
       }
-
+body{
+  font-family: "OssFont", sans-serif;
+}
       .rectangle {
         background-color: #1c6fa5;
         border-radius: 10px;
@@ -181,7 +183,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../Products1.html"> Our Products</a>
+              <a class="nav-link" href="../Products1.html"> <strong>Our Products</strong></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../Clients.html"> Clients</a>
@@ -219,10 +221,7 @@
     </nav>
 
     <!--Clients Section-->
-    <img
-      style="display: block; width: 100%; height: 570px; margin-bottom: 50px"
-      src="../GG Website copy 2_Folder/Links/Screenshot 2023-06-10 at 3.13.16 PM.png"
-    />
+    
     <div
       style="
         display: flex;
@@ -233,27 +232,77 @@
         margin-bottom: 100px;
       "
     >
-      <div style="margin-bottom: 20px">
-        <h1 class="text-center ggoc-heading">
-          <a href="../Products1.html"><span>Our Products</span></a> / KTA SPINDLE TOOLINGS
-        </h1>
+    <style>
+      .container{
+      padding-left: calc(var(--bs-gutter-x) * 5.5);
+      padding-right: calc(var(--bs-gutter-x) * 5.5);
+    }
+      .p{
+        font-family: "OssFont", sans-serif;
+      }
+      .section{
+        text-align: center;
+      }
+      .section img{
+        width: 20%;
+  margin: 100px;
+      }
+      .sub-heading{
+        font-size: 20px;
+        color: #2b83b1;
+        margin-bottom: 50px;
+        
+      }
+      .line{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid #1a3b55;
+      }
+      .heading{
+        padding: 100px;
+    background-color: #1a3b55;
+    color: white;
+    font-size: 25px !important;
+      }
+      .heading a{
+        color: white;
+      }
+    </style>
+      <div class="container-fluid" style="margin-bottom: 20px">
+        <h1 class="text-center ggoc-heading heading">
+          <a href="../Products1.html">Our Products</a> / Industrial
+          Hardware / KTA
       </div>
+  
       <div class="section">
-<img src="../logos/KTA.png" alt="">
+        <img src="../logos/KTA.png" alt=""/>
       </div>
       <section class="center-div w-100">
         <div class="container">
-          <p style="font-size: x-large">
-            Ghai Group is the Authorized dealer for KTA Spindle Toolings
-            Products in the Mohali, Chandigarh, Himachal, and Haryana regions.
-            KTA SPINDLE TOOLINGS has been manufacturing Tapping Chucks and Tap
-            Adaptors for more than 30 years, providing high-quality products to
-            meet the tapping needs of various industries.
+          <p style="">
+            The <b>Ghai Group</b> has been an authorized dealer for KTA Spindle Tools since 2010, serving the markets of Punjab, Chandigarh, Haryana, and Himachal Pradesh. KTA Spindle Toolings, a seasoned manufacturer with over three decades of expertise, is renowned for its premium Tapping Chucks and Tap Adaptors. Established as an industry leader, KTA Spindle Toolings delivers high-quality solutions to address the tapping demands of various sectors. Their products are trusted for their precision and durability, reflecting the company's commitment to excellence. With a proven track record and a wide range of offerings, KTA Spindle Toolings remains a reliable choice for businesses seeking top-notch tools to enhance their tapping operations.
           </p>
+          <hr class="line">
+          <p style="">
+            <span class="sub-heading ggoc-heading">Product Range: </span> <br>
+            <br>1) ER collet chuck.
+<br>2) Weldon / Side Lock Holder.
+<br>3) Shrink Fit Holder.
+<br>4) Hydraulic Expansion Chucks & Reduction Sleeves.
+<br>5) Power Milling Chucks.
+<br>6) Die & Mould Chucks.
+<br>7) Face Mill Holders,
+<br>8) Combi Shell Mill Holders.
+<br>9) Tapping Chucks for Synchronised Tapping Cycle ( MLC ).
+<br>10) Quick Change Tapping Chucks KWFLK 1, 2 , 3 & 4 with Safety Clutch Tap Adaptors.
+
+          </p>
+          
+          
         </div>
       </section>
-      <section class="center-div w-100" style="margin-top: 100px;">
-        <div class="container">
+      <section class="center-div w-100" style="margin-top: 100px">
+        <!-- <div class="container">
         <h1 class="ggoc-heading" style="text-align: justify; font-size: xx-large;">
           Product Range
         </h1>
@@ -261,32 +310,60 @@
           <p style="font-size: x-large">
             <ul style="font-size: x-large">
               <li>
-                1) ER collet chuck.
+                1) Masking Tape
               </li>
               <li>
-                2) Weldon / Side Lock Holder.
+                2) Sealants
               </li>
               <li>
-                3) Shrink Fit Holder.
+                3) Telescopic Drawer Channels
               </li>
               <li>
-                4) Hydraulic Expansion Chucks & Reduction Sleeves.
+                4) Bopp Packing Tapes
               </li>
               <li>
-                5) Power Milling Chucks.
+                5) PVC Insulation Tapes
               </li>
               <li>
-                6) Die & Mould Chucks.
+                6) PTFE Thread Sealing Tape
               </li>
               <li>
-                7) Face Mill Holders.
+                7) Diesel Fuel Treatment
               </li>
               <li>
-                8) Combi Shell Mill Holders.
+                8) Fibre Disc
               </li>
+              <li>
+                9) Flap Disc
+              </li>
+              <li>
+                10) Hook & Loop Disc
+              </li>
+              <li>
+                11) Gold Cut Off Wheel
+              </li>
+              <li>
+                12) Grinding Wheel
+              </li>
+              <li>
+                13) Wood & Marble Cutting Disc
+              </li>
+              <li>
+                14) Abrasive Cloth Roll
+              </li>
+              <li>
+                15) Sand Paper
+              </li>
+              <li>
+                16) Aloxide Resin Belts
+              </li>
+              <li>
+                17) Spray Paints
+              </li>
+              
             </ul>
           </p>
-        </div>
+        </div> -->
       </section>
     </div>
 
@@ -395,7 +472,8 @@
                   font-family: OssFont;
                 "
               >
-                0172-4085059 <br> +91 8427202709
+                0172-4085059 <br />
+                +91 8427202709
               </p>
             </div>
             <div>
