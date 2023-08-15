@@ -56,17 +56,17 @@
 
       @font-face {
         font-family: "CustomFont";
-        src: url("/Fonts/GlacialIndifference-Regular.otf") format("truetype");
+        src: url("../Fonts/GlacialIndifference-Regular.otf") format("truetype");
       }
 
       @font-face {
         font-family: "HeroFont";
-        src: url("/Fonts/APOLLO.otf") format("truetype");
+        src: url("../Fonts/APOLLO.otf") format("truetype");
       }
 
       @font-face {
         font-family: "OssFont";
-        src: url("/Fonts/NunitoSans-Light.ttf") format("truetype");
+        src: url("../Fonts/NunitoSans-Light.ttf") format("truetype");
       }
 
       @font-face {
@@ -117,7 +117,9 @@
         font-family: "CustomFont", sans-serif;
         font-size: large;
       }
-
+body{
+  font-family: "OssFont", sans-serif;
+}
       .rectangle {
         background-color: #1c6fa5;
         border-radius: 10px;
@@ -181,7 +183,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../Products1.html"> Our Products</a>
+              <a class="nav-link" href="../Products1.html"> <strong>Our Products</strong></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../Clients.html"> Clients</a>
@@ -219,10 +221,7 @@
     </nav>
 
     <!--Clients Section-->
-    <img
-      style="display: block; width: 100%; height: 570px; margin-bottom: 50px"
-      src="../GG Website copy 2_Folder/Links/Screenshot 2023-06-10 at 3.13.16 PM.png"
-    />
+    
     <div
       style="
         display: flex;
@@ -233,24 +232,79 @@
         margin-bottom: 100px;
       "
     >
-      <div style="margin-bottom: 20px">
-        <h1 class="text-center ggoc-heading">
-          <a href="../Products1.html"><span>Our Products</span></a> / Industrial
+    <style>
+      .container{
+      padding-left: calc(var(--bs-gutter-x) * 5.5);
+      padding-right: calc(var(--bs-gutter-x) * 5.5);
+    }
+      .p{
+        font-family: "OssFont", sans-serif;
+      }
+      .section{
+        text-align: center;
+      }
+      .section img{
+        width: 20%;
+  margin: 100px;
+      }
+      .sub-heading{
+        font-size: 20px;
+        color: #2b83b1;
+        margin-bottom: 50px;
+        
+      }
+      .line{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid #1a3b55;
+      }
+      .heading{
+        padding: 100px;
+    background-color: #1a3b55;
+    color: white;
+    font-size: 25px !important;
+      }
+      .heading a{
+        color: white;
+      }
+    </style>
+      <div class="container-fluid" style="margin-bottom: 20px">
+        <h1 class="text-center ggoc-heading heading">
+          <a href="../Products1.html">Our Products</a> / Industrial
           Lubricant / MOTOROL
-        </h1>
       </div>
+  
       <div class="section">
-        <img src="../logos/MOTOROL.png" alt="" />
+        <img src="../logos/MOTOROL.png" alt=""/>
       </div>
       <section class="center-div w-100">
         <div class="container">
-          <p style="font-size: x-large">
-            A fledging brand that took its first few steps 50 years back in India, Motorol Lubricants has aligned itself geographically and strategically along with its ever-evolving demand base to become one of the trusted names in the international arena. Today, Motorol is manufactured out of strategic locations in the Ras Al Khaimah, UAE – serving the Middle East; Nairobi, Kenya – serving Africa; and Gujarat, India – serving the Indian subcontinent.
+          <p style="">
+             <b>Ghai Group</b> has been the authorized dealer for Motorol since 2022, serving the regions of Punjab, Chandigarh, Himachal Pradesh, and Haryana. Motorol Lubricants, a brand that started its India journey 50 years ago, has shown impressive growth by responding to customer demands and adapting both geographically and strategically. It is now a well-respected and trusted name in the global market.
           </p>
-          </div>
+          <hr class="line">
+          <p style="">
+            <span class="sub-heading ggoc-heading">Product Range: </span> <br>
+            <br>1) Hydraulic Oil
+<br>2) Cutting Oil
+<br>3) General Purpose Oil
+<br>4) Corrosion Preventive Oil
+<br>5) Diesel Engine Oil
+<br>6) M.P Grease
+
+
+
+
+
+
+
+          </p>
+          
+          
+        </div>
       </section>
       <section class="center-div w-100" style="margin-top: 100px">
-        <div class="container">
+        <!-- <div class="container">
         <h1 class="ggoc-heading" style="text-align: justify; font-size: xx-large;">
           Product Range
         </h1>
@@ -258,30 +312,60 @@
           <p style="font-size: x-large">
             <ul style="font-size: x-large">
               <li>
-                1) Hydraulic Oil
-                          </li>
-              
-              <li>
-                2) Cutting Oil
+                1) Masking Tape
               </li>
               <li>
-                3) General Purpose Oil
+                2) Sealants
               </li>
               <li>
-                4) Corrosion Preventive Oil
+                3) Telescopic Drawer Channels
               </li>
               <li>
-                5) Diesel Engine Oil
+                4) Bopp Packing Tapes
               </li>
               <li>
-                6) M.P Grease
+                5) PVC Insulation Tapes
               </li>
-              
-             
+              <li>
+                6) PTFE Thread Sealing Tape
+              </li>
+              <li>
+                7) Diesel Fuel Treatment
+              </li>
+              <li>
+                8) Fibre Disc
+              </li>
+              <li>
+                9) Flap Disc
+              </li>
+              <li>
+                10) Hook & Loop Disc
+              </li>
+              <li>
+                11) Gold Cut Off Wheel
+              </li>
+              <li>
+                12) Grinding Wheel
+              </li>
+              <li>
+                13) Wood & Marble Cutting Disc
+              </li>
+              <li>
+                14) Abrasive Cloth Roll
+              </li>
+              <li>
+                15) Sand Paper
+              </li>
+              <li>
+                16) Aloxide Resin Belts
+              </li>
+              <li>
+                17) Spray Paints
+              </li>
               
             </ul>
           </p>
-        </div>
+        </div> -->
       </section>
     </div>
 
