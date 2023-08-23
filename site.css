@@ -2,3 +2,13 @@ strong {
   font-weight: 100;
   color: #3083b2;
 }
+.logo-container1 {
+  margin-top: 400px;
+  margin-bottom: 150px;
+}
+.logo-container {
+  height: 40vh !important;
+}
+b {
+  font-size: large;
+}
