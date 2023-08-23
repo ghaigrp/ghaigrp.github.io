@@ -10,5 +10,5 @@ strong {
   height: 40vh !important;
 }
 b {
-  font-size: large;
+  font-family: ClientFont;
 }
