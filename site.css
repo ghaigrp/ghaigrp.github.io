@@ -3,7 +3,7 @@ strong {
   color: #3083b2;
 }
 .logo-container1 {
-  margin-top: 400px;
+  margin-top: 200px;
   margin-bottom: 150px;
 }
 .logo-container {
@@ -11,4 +11,14 @@ strong {
 }
 b {
   font-family: ClientFont;
+}
+.carousel_ext-item {
+  border: none !important;
+  background-color: white !important;
+}
+.first_signup {
+  margin-top: 30px !important;
+}
+.bg-secondary {
+  background: none !important;
 }
