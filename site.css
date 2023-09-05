@@ -27,3 +27,6 @@ b {
   padding-right: 200px;
   padding-top: 50px;
 }
+.navbar-nav .nav-link {
+  color: black !important;
+}
